@@ -1,0 +1,6 @@
+@mixin brand-circle($width, $color) {
+   width: $width;
+   height: $width;
+   background-color: $color;
+   border-radius: $width/2;
+}
