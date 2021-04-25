@@ -2,22 +2,23 @@
    height: 100vh;
    width: 100%;
    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../img/header__bg.jpg') center (center/cover) no-repeat;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
    &__content {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin-top: -50px;
+      margin: 0 auto;
+      padding-top: 300px;
    }
 
    &__myname {
       text-shadow: 0px 0px 5px black;
       position: relative;
+      right: 430px;
+      top: 25px;
       z-index: 0;
-      padding-right: 36px;
+      font-weight: 100;
+
       &:before {
          content: "";
          display: inline-block;
@@ -28,34 +29,53 @@
          z-index: -1;
       }
    }
-
-   &__buttons {
+   &__button {
+      width: 300px;
+      height: 40px;
+      height: 45px;
+      background-color: $main-color;
+      color: #fff;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      box-shadow: 2px 2px 15px black;
+      text-shadow: 1px 1px 2px black;
+      transition: all 0.5s;
+      border-radius: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      max-width: 532px;
-   }
-   &__button {
-      width: 532px;
-      font-size: 20px;
-      letter-spacing: 0;
-      box-shadow: 0px 0px 15px #000;
-      text-shadow: 0 0 5px black;
-      transition: all 1s;
+      text-transform: uppercase;
       &:hover {
-         background-color: rgba(0, 0, 0, 0);
-         box-shadow: none;
-         border: 1px solid #fff;
-         border-radius: 10px;
+         transform: scale(1.05);
+         text-decoration: none;
+         color: #fff;
       }
-   }
-   &__about-me {
-      font-weight: 700;
-      font-size: 14px;
+      // .button {
+      //    display: block;
+      //    width: 33px;
+      //    height: 45px;
+      //    background-color: $main-color;
+      //    text-decoration: none;
+      //    color: #fff;
+      //    display: flex;
+      //    align-items: center;
+      //    justify-content: center;
+      //    font-weight: 700;
+      //    font-size: 14px;
+      //    letter-spacing: 1px;
+      //    &:hover {
+      //       text-decoration: none;
+      //       color: #fff;
+      //    }
+      // }
    }
    &__title {
-      max-width: 532px;
       margin-bottom: 30px;
       text-shadow: 2px 2px 15px black;
+      font-weight: 300;
+      font-size: 110px;
+      line-height: 110px;
    }
 }
