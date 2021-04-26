@@ -1,0 +1,136 @@
+// ! header adapt HEIGHT
+@media (max-height: 700px) {
+   .tech {
+      &__container {
+         margin-bottom: 50px;
+      }
+   }
+}
+@media (max-height: 576px) {
+   .tech {
+      &__container {
+         margin-bottom: 90px;
+      }
+   }
+}
+@media (max-height: 576px) {
+   .tech {
+      display: none;
+   }
+}
+@media (max-height: 576px) {
+   .header {
+      &__inner {
+         justify-content: center;
+      }
+      &__content {
+         margin-bottom: 99px;
+      }
+   }
+}
+
+// ! header adapt WIDTH
+@media (max-width: 1140px) {
+   .upheader {
+      justify-content: space-between;
+      margin-left: 1%;
+      margin-right: 1%;
+   }
+   .header {
+      &__myname {
+         right: 291px;
+         top: 35px;
+      }
+      &__title {
+         font-size: 77px;
+         margin-bottom: 10px;
+      }
+   }
+   .tech {
+      &__item {
+         width: 80px;
+         height: 80px;
+         img {
+            width: 40px;
+         }
+         &:nth-child(4) {
+            img {
+               width: 60px;
+            }
+         }
+         &:nth-child(5) {
+            img {
+               width: 55px;
+            }
+         }
+         &:nth-child(6) {
+            img {
+               width: 55px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .upheader {
+      justify-content: space-between;
+      margin-left: 1%;
+      margin-right: 1%;
+      &__email {
+         display: none;
+      }
+   }
+   .header {
+      &__myname {
+         right: 150px;
+         top: 14px;
+      }
+      &__title {
+         font-size: 50px;
+         line-height: 50px;
+         margin-bottom: 15px;
+      }
+   }
+   .tech {
+      &__container {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__item {
+         margin-bottom: 15px;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   .upheader {
+      justify-content: center;
+      &__contact {
+         display: none;
+      }
+   }
+   .header {
+      &__myname {
+         position: relative;
+         top: 0;
+         right: 15px;
+         text-align: center;
+      }
+      &__title {
+         font-size: 30px;
+         line-height: 30px;
+         margin-bottom: 15px;
+         font-weight: 700;
+      }
+   }
+}
+
+@media (max-width: 430px) {
+   .tech__container {
+      max-width: 220px;
+   }
+   .tech__item {
+      margin: 15px;
+   }
+}

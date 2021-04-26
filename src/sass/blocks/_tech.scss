@@ -1,0 +1,39 @@
+.tech {
+   &__container {
+      display: flex;
+      max-width: 1140px;
+   }
+   &__item {
+      width: 100px;
+      height: 100px;
+      margin: 0 15px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 1s;
+      &:hover {
+         border: 2px solid $main-color;
+      }
+      &:nth-child(4) {
+         img {
+            width: 75px;
+         }
+      }
+      &:nth-child(5) {
+         img {
+            width: 66px;
+         }
+      }
+      &:nth-child(6) {
+         img {
+            width: 66px;
+         }
+      }
+      img {
+         width: 45px;
+      }
+   }
+}

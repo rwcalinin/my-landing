@@ -1,4 +1,14 @@
+a {
+   color: #fff;
+   text-decoration: none;
+   &:hover {
+      color: #fff;
+      text-decoration: none;
+   }
+}
+
 .header {
+   color: #fff;
    height: 100vh;
    width: 100%;
    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../img/header__bg.jpg') center (center/cover) no-repeat;
@@ -8,9 +18,14 @@
       align-items: center;
       text-align: center;
       margin: 0 auto;
-      padding-top: 300px;
    }
-
+   &__inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+   }
    &__myname {
       text-shadow: 0px 0px 5px black;
       position: relative;
@@ -18,7 +33,7 @@
       top: 25px;
       z-index: 0;
       font-weight: 100;
-
+      transition: all 1s;
       &:before {
          content: "";
          display: inline-block;
@@ -52,24 +67,6 @@
          text-decoration: none;
          color: #fff;
       }
-      // .button {
-      //    display: block;
-      //    width: 33px;
-      //    height: 45px;
-      //    background-color: $main-color;
-      //    text-decoration: none;
-      //    color: #fff;
-      //    display: flex;
-      //    align-items: center;
-      //    justify-content: center;
-      //    font-weight: 700;
-      //    font-size: 14px;
-      //    letter-spacing: 1px;
-      //    &:hover {
-      //       text-decoration: none;
-      //       color: #fff;
-      //    }
-      // }
    }
    &__title {
       margin-bottom: 30px;
@@ -77,5 +74,6 @@
       font-weight: 300;
       font-size: 110px;
       line-height: 110px;
+      transition: all 1s;
    }
 }

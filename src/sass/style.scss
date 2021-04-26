@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: #fff;
 }
 body {
     font-family: 'Roboto Mono', monospace;
@@ -17,17 +16,12 @@ body {
     margin: 0 auto;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-       color: #fff;
-       text-decoration: none;
-    }
- }
-
 // import blocks
 
 @import 'blocks/upheader';
 @import 'blocks/title';
 @import 'blocks/header';
+@import 'blocks/tech';
+
+
+@import 'base/adaptive';
