@@ -1,17 +1,17 @@
 a {
-   color: #fff;
+   color: #000;
    text-decoration: none;
    &:hover {
-      color: #fff;
+      color: #000;
       text-decoration: none;
    }
 }
 
 .header {
-   color: #fff;
+   color: #000;
    height: 100vh;
    width: 100%;
-   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../img/header__bg.jpg') center (center/cover) no-repeat;
+   // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../img/header__bg.jpg') center (center/cover) no-repeat;
    &__content {
       display: flex;
       flex-direction: column;
@@ -22,35 +22,32 @@ a {
       height: 50vh;
       padding-top: 175px;
    }
-   &__myname {
-      text-shadow: 0px 0px 5px black;
-      position: relative;
-      right: 430px;
+
+   &__subtitle {
+      right: 500px;
       top: 25px;
-      z-index: 0;
-      font-weight: 100;
-      transition: all 1s;
       &:before {
-         content: "";
-         display: inline-block;
-         @include brand-circle(36px, $main-color);
-         position: relative;
-         top: 10px;
-         left: 18px;
-         z-index: -1;
+      content: "";
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background-color: $main-color;
+      border-radius: 100%;
+      position: relative;
+      top: 7px;
+      left: 29px;
+      z-index: -1;
       }
    }
    &__button {
-      width: 300px;
+      width: 255px;
       height: 40px;
-      height: 45px;
       background-color: $main-color;
       color: #fff;
-      font-weight: 300;
+      font-weight: 700;
       font-size: 18px;
       letter-spacing: 1px;
       text-decoration: none;
-      box-shadow: 2px 2px 15px black;
       text-shadow: 1px 1px 2px black;
       transition: all 0.5s;
       border-radius: 10px;
@@ -65,10 +62,10 @@ a {
       }
    }
    &__title {
-      margin-bottom: 30px;
-      text-shadow: 2px 2px 15px black;
-      font-weight: 300;
-      font-size: 110px;
+      margin-bottom: 60px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      font-size: 150px;
       line-height: 110px;
       transition: all 1s;
    }

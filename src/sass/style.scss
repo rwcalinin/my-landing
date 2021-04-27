@@ -1,19 +1,23 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'base/variables';
 @import 'base/mixins';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500&display=swap');
+@import 'base/fonts';
 
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Bender';
     box-sizing: border-box;
 }
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+.colored-angle {
+    color: rgb(86, 214, 129);
+    text-shadow: 0px 0px 1px black;
 }
 
 // import blocks
@@ -23,3 +27,4 @@ body {
 @import 'blocks/header';
 @import 'blocks/tech';
 @import 'base/adaptive';
+@import 'blocks/about';

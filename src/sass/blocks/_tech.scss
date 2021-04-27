@@ -2,7 +2,7 @@
    height: 100%;
    &__container {
       display: flex;
-      justify-content: space-between;
+      justify-content: stretch;
       align-items: center;
       max-width: 1140px;
       height: 29.5vh;
@@ -12,7 +12,7 @@
    &__item {
       width: 150px;
       height: 150px;
-      // border: 2px solid #fff;
+      border-bottom: 4px solid #000;
       // border-radius: 100%;
       display: flex;
       align-items: center;
@@ -22,8 +22,8 @@
       &:hover {
          filter: grayscale(0%); 
          // border-radius: 100%;
-         // background-color: #000;
-         // border: 3px solid #fff;
+         // background-color: $main-color;
+         border-bottom: 4px solid $main-color;
       }
       &:nth-child()
       img {

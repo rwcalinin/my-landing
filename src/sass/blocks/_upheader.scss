@@ -1,5 +1,5 @@
 .upheader {
-   height: 64px;
+   height: 94px;
    position: relative;
    left: 50%;
    transform: translateX(-50%);
@@ -9,16 +9,7 @@
    align-items: center;
    justify-content: space-between;
    font-size: 18px;
-   &__background {
-      position: absolute;
-      width: 200%;
-      height: 64px;
-      background-color: #000;
-      opacity: 0.8;
-      z-index: 0;
-      filter: blur(15px);
-   }
-
+   
    &__contacts {
       
    }
@@ -35,7 +26,7 @@
    // ! smm img(svg) styles IN HTML
 
    &__smm {
-      width: 125px;
+      width: 136px;
       display: flex;
       align-items: center;
       justify-content: space-between;
