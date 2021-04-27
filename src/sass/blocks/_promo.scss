@@ -1,0 +1,65 @@
+.promo {
+   height: 100vh;
+   background: url('../../img/background/promo_background.jpg') center (center/cover) no-repeat;
+   .container {
+      height: 100%;
+   }
+   &__flex {
+      height: 89.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
+   &__main {
+      text-align: center;
+      padding-top: 200px;
+   }
+   &__subtitle {
+      font-weight: 400;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0;
+   }
+   &__title {
+      font-weight: 900;
+      font-size: 125px;
+      line-height: 135px;
+      margin-bottom: 35px;
+      text-transform: uppercase;
+   }
+   &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 35px;
+      line-height: 35px;
+      width: 350px;
+      height: 60px;
+      border: 1px solid #000;
+      text-transform: uppercase;
+      transition: all 0.5s;
+      &:hover {
+         text-decoration: none;
+         background-color: $main-color;
+         color: #fff;
+         border: none;
+      }
+   }
+
+   // technologies
+
+   &__tech {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      &-box {
+
+      }
+      &-img {
+         width: 100px;
+      }
+   }
+
+}

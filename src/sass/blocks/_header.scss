@@ -1,72 +1,25 @@
-a {
-   color: #000;
-   text-decoration: none;
-   &:hover {
-      color: #000;
-      text-decoration: none;
-   }
-}
-
 .header {
-   color: #000;
-   height: 100vh;
-   width: 100%;
-   // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../img/header__bg.jpg') center (center/cover) no-repeat;
-   &__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: 0 auto;
-      height: 50vh;
-      padding-top: 175px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   &__bg {
+      position: absolute;
+      top: 0px;
+      height: 100px;
+      width: 100%;
+      opacity: 0.7;
+      filter: blur(5px);
+      background-color: #fff;
+      z-index: 0;
+   }
+   &__icon {
+      width: 40px;
+      margin: 0px 4px;
+   }
+   &__side-margin {
+      margin: 25px 20px;
+      z-index: 1;
    }
 
-   &__subtitle {
-      right: 500px;
-      top: 25px;
-      &:before {
-      content: "";
-      display: inline-block;
-      width: 36px;
-      height: 36px;
-      background-color: $main-color;
-      border-radius: 100%;
-      position: relative;
-      top: 7px;
-      left: 29px;
-      z-index: -1;
-      }
-   }
-   &__button {
-      width: 255px;
-      height: 40px;
-      background-color: $main-color;
-      color: #fff;
-      font-weight: 700;
-      font-size: 18px;
-      letter-spacing: 1px;
-      text-decoration: none;
-      text-shadow: 1px 1px 2px black;
-      transition: all 0.5s;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      &:hover {
-         transform: scale(1.05);
-         text-decoration: none;
-         color: #fff;
-      }
-   }
-   &__title {
-      margin-bottom: 60px;
-      font-weight: 400;
-      letter-spacing: 5px;
-      font-size: 150px;
-      line-height: 110px;
-      transition: all 1s;
-   }
 }

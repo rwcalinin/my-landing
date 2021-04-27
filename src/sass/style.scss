@@ -1,11 +1,19 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'base/variables';
-@import 'base/mixins';
+
+// ! fonts 100 / 400 / 700
 @import 'base/fonts';
 
+// ! basic discharge and set styles
 * {
     margin: 0;
     padding: 0;
+    a {
+        color: #000;
+        &:hover {
+            color: #000;
+        }
+    }
 }
 body {
     font-family: 'Bender';
@@ -15,16 +23,11 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
-.colored-angle {
-    color: rgb(86, 214, 129);
-    text-shadow: 0px 0px 1px black;
+.angle__colored {
+    color: $main-color;
 }
 
-// import blocks
 
-@import 'blocks/upheader';
-@import 'blocks/title';
+// ! blocks
 @import 'blocks/header';
-@import 'blocks/tech';
-@import 'base/adaptive';
-@import 'blocks/about';
+@import 'blocks/promo';
