@@ -26,9 +26,17 @@ body {
 .angle__colored {
     color: $main-color;
 }
-
+.line {
+    width: 600px;
+    height: 3px;
+    background-color: #000;
+    margin: 0px auto;
+ }
 
 // ! blocks
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/adaptive';
+@import 'blocks/about';
+@import 'blocks/portfolio';
+@import 'blocks/contact';

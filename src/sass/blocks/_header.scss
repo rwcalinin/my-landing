@@ -16,6 +16,10 @@
    &__icon {
       width: 40px;
       margin: 0px 4px;
+      transition: all 1s;
+      &:hover {
+         transform: scale(1.1);
+      }
    }
    &__side-margin {
       margin: 25px 20px;

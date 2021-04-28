@@ -1,0 +1,15 @@
+.about {
+   margin: 70px 0px;
+   &__title {
+      font-size: 60px;
+      text-align: center;
+      margin-top: 45px;
+   }
+   .container {
+      display: flex;
+      margin-bottom: 90px;
+   }
+   &-box {
+      margin: 0 20px;
+   }
+}
