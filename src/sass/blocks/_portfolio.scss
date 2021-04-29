@@ -4,11 +4,11 @@
       height: 355px;
       display: grid;
       gap: 5px;
-      grid-template-columns: [col1-s] 16.6% [col2-s] 16.6% [col3-s] 16.6% [col4-s] 16.6% [col5-s] 16.6% [col6-s] 16.6%;
+      grid-template-columns: [col1-s] 16.666% [col2-s] 16.666% [col3-s] 16.666% [col4-s] 16.666%;
       grid-template-rows: [row1-s] 0.7fr [row2-s] 1fr;
       grid-template-areas:
-      "first-site first-site second-site four-site four-site six-site"
-      "first-site first-site third-site five-site five-site six-site"
+      "first-site first-site second-site four-site four-site"
+      "first-site first-site third-site five-site five-site"
    }
    &__item {
       cursor: pointer;
@@ -35,7 +35,4 @@
 }
 #five-site {
    grid-area: five-site;
-}
-#six-site {
-   grid-area: six-site; 
 }
