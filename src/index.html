@@ -149,11 +149,11 @@
                <form action="post" class="contact__form">
                   <div class="contact__inputs">
                      <div id="first-grid-input" class="contact__input">
-                        <input placeholder="Your name" name="name" id="name-input" class="contact__input-item"
+                        <input required placeholder="Your name" name="name" id="name-input" class="contact__input-item"
                            type="text">
                      </div>
                      <div id="second-grid-input" class="contact__input">
-                        <input placeholder="Your e-mail" name="email" id="email-input" class="contact__input-item"
+                        <input required placeholder="Your e-mail" name="email" id="email-input" class="contact__input-item"
                            type="email">
                      </div>
                   </div>
@@ -162,7 +162,7 @@
                      <textarea placeholder="Your message" name="text" id="textarea-input"
                         class="contact__textarea-input"></textarea>
                   </div>
-
+                  <input required type="checkbox"> <span>Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a> </span> <br>
                   <button id="four-grid-input" class="contact__button">Send Message</button>
 
                </form>
